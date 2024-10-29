@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% block title %}Arduino{% endblock %}
+
+{% block content %}
+<div class="ard" style="position: static; overflow:hidden; display: flex; flex-direction:column; justify-content:space-evenly; align-items: center; text-align: center; ">
+    <h1 style="padding-top:20 px;">
+        Arduino
+    </h1>
+
+    <!--Explaining what an arduino is-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            What is an arduino?
+        </h3>
+        <p>
+            I am no expert, infact im a beginner but ill explain it how i understand it. its essentially a tiny computer that can connnect input devices and output devices in any way you can possibly think of. You can code into it to process the inputs and manipulate the output devices. Heres a great <a href="https://youtu.be/yi29dbPnu28?si=Q4ek7P0jubXL_h-H" target="_blank">youtube video </a> i saw about it by mark rober/crash labs. 
+        </p>
+    </div>
+
+    <!--My build-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            My build:
+        </h3>
+        <p>
+            The goal for my build is to essentailly create a smart home appliance which can detect motion and switch on the light to my room. It will hopefully not only switch it one based of motion but also if its required (i.e if the room is sufficiently lit without it) to save electricity and for enviromental sustainability.
+        </p>
+        <p>
+            Now there are a couple different components to my build that may be useful to know such as:
+        </p>
+        <ul style="text-align:left ;">
+            <li>
+                <strong>Arduino:</strong> the heart of this entire thing which i already explained
+            </li>
+            <li>
+                <strong>PIR sensor:</strong> is an infa red sensor which im  using as a motion detector
+            </li>
+            <li>
+                <strong>Jumper wires:</strong> the wire used to connect everything
+            </li>
+            <li>
+                <strong>Breadboard:</strong> The 'hub' where i connect everything, bascially how i see it, is a way to connect wiress without having to fuse them together.
+            </li>
+            <li>
+                <strong>LDR:</strong> a light dependant resistor, but in my case how im going to tell how much light is present
+            </li>
+            <li>
+                <strong>Servo motor:</strong> the end effector, or output device im going to use to switch on the lights
+            </li>
+        </ul>
+
+
+    </div>
+
+    <!--Blog 1:-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            Blog 1: Basic 1 PIR to Servo motor
+        </h3>
+        <div style="position: static; overflow:hidden; display: flex; flex-direction:row; justify-content:space-evenly; align-items: center; text-align: center; ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card">
+                    <img src="/static/blog1.jpeg" class="card-img-top" alt="blog 1">
+                    <div class="card-body">
+                        <p class="card-text">Very messy looking, but being neat wasn't the goal.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;">
+                <p>
+                    This is the first of many blogs (hopefully), i initially write all my blogs for convience. I then am going to copy it here and make minor changes for the sake of readability. 
+                </p>
+                <p>
+                    The goal for this one was just to get a simple circuit working.
+                </p>
+                <p>
+                    With all the planning done a day earlier, the whole wiring and coding took only 20 minutes! I'm personally pretty happy with that. Especially since I thouht it wouldnt work on my first run. The only problem i came into was my PIR sensor not having labels for which pin was (VCC, GND and OUT). Was a simple fix thought, I just searched up similar ones with the labels. I tested it for almost as long as it took to make it with my parents, because i was in shock with it working. 
+                </p>
+            </div>
+        </div>
+               
+    </div>
+
+    <!--Blog 2:-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            Blog 2: 2 PIRs to servo motor
+        </h3>
+        <div style="position: static; overflow:hidden; display: flex; flex-direction:row; justify-content:space-evenly; align-items: center; text-align: center; ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card">
+                    <img src="/static/blog2.jpeg" class="card-img-top" alt="blog 2">
+                    <div class="card-body">
+                        <p class="card-text">Looks messy but really isn't too bad, there's now some use of color codes.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;">
+                <p>
+                    The goal for this one was simply to be able to detect motion that the object detected by PIR was moving.
+                </p>
+                <p>
+                    This is pretty much just an extension of Blog 1. The thought behind this is with the end goal in mind, knowing the direction someone under the sensor may be moving. This is needed as we shouldn't switch the light on if someone is going out of the room. This update was relatively simple as it didnt require any extra knowledge but i found it useful as it made me repeat what id previously done, which helped cement the knowledge in. happy to say it worked, this time i wasn't suprised though.
+                </p>
+            </div>
+        </div>
+               
+    </div>
+
+    <!--Blog 3:-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            Blog 3: Adding an LDR
+        </h3>
+        <div style="position: static; overflow:hidden; display: flex; flex-direction:row; justify-content:space-evenly; align-items: center; text-align: center; ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card">
+                    <img src="/static/blog3.jpeg" class="card-img-top" alt="blog 2">
+                    <div class="card-body">
+                        <p class="card-text">And its messy again.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;">
+                <p>
+                    The goal for this one was to have it only function if light was present
+                </p>
+                <p>
+                    Again, this maintained the layout from blog 2 and 1 however just required additions. <s style="color:darkgrey;">All</s> The other <s style="color:darkgrey;">sensors</s> sensor had 3 pins, one for ground, 5v and into the arduino for its data to go to it. This one however only had two which strumped me at first. Then i realized you got to pretty much turn it into 3 pins by making one of them connect to ground and the arduino in paralell - which i somewhat got assited by the internet to reach that conclusion. Anyways, this ended up working and felt really good. This build has so far, been really rewarding.
+                </p>
+            </div>
+        </div>
+               
+    </div>
+
+    <!--Blog 4:-->
+    <div style="border-bottom: 0.5px solid white; padding-top:20px;">
+        <h3>
+            Blog 4: Testing servo motor
+        </h3>
+        <div style="position: static; overflow:hidden; display: flex; flex-direction:row; justify-content:space-evenly; align-items: center; text-align: center; ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card">
+                    <img src="/static/blog4.jpeg" class="card-img-top" alt="blog 2">
+                    <div class="card-body">
+                        <p class="card-text">Definetly not ideal. This all is sitting on a chair btw.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="padding:10px;">
+                <p>
+                    The goal for this one was to ensure the servo motor really worked so that I could go on and fully set this up and figure that out. 
+                </p>
+                <p>
+                    Glad to say after standing in very uncomfortable way making changes to my code it did in fact work. I had to place a lot of blocks in order to place the remaining components of the build (other than the servomotor) and had to stand or sit on the very edge of the seat. Not ideal. it also didnt work a couple times but after securing it a bit tighter onto the wall with my hand it did infact work. At one point though i thought i broke the servomotor but it was just a bug in my code in the returning position. All n all, happy it worked. 
+                </p>
+            </div>
+        </div>
+               
+    </div>
+</div>
+{% endblock%}

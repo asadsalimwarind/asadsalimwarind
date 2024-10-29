@@ -1,0 +1,98 @@
+
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- carousel -->
+<div id="carouselExampleAutoplaying" class="carousel slide mb-5" data-bs-ride="carousel" style="height:100vh;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/image2.JPG" class="d-block w-100 resizable" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/image1.JPG" class="d-block w-100 resizeable" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/carousel3.JPG" class="d-block w-100 resizeable" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/carousel4.jpeg" class="d-block w-100 resizeable" alt="...">
+        </div>
+    </div>
+    <div style="position: absolute; top: 40%; left: 50%; transform: translateX(-50%); z-index: 5; color:white; text-align:center;">
+        <div style="padding:10px;">
+            <h1>Welcome to My Website!</h1>
+            <p>Hi! I'm Asad, and this is a website I built in my free time during summers in order to keep my web dev skills warm. I continue to add to this website and update it regularly for the same reason, plus it's fun. This website is kinda like a personal blog of what I've been up to in and out of school. Enjoy!</p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- about me  -->
+<div class="container-fluid py-5 text-center" style="padding-top: 100px;">
+    <h1 style="padding-top:100px;">About Me:</h1>
+    <h3 class="mx-auto" style="max-width: 600px; padding-bottom:75px;">
+        For those who don't know me, (or not well at least), most of where my time goes, is into sports, academia, projects I do, and a whole lot of random things in the middle (food, cooking, researching, etc.). So anyways, I decided to share all that with you:
+    </h3>
+</div>
+
+<!-- Link to pages -->
+<div class="container py-5">
+    <!-- Sports -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <img class="img-fluid" src="/static/sports.JPG" alt="sports">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+            <h1>Sports</h1>
+            <h3>Where to even begin. Sport is my therapy. It's who i go to when i need an escape, or advice on life. Sports have helped me through more hardships that I can count and in the process taught me valuabel life lessons like the effect hard work, discipline and consistency can do for someone. I don't know when i started playing sports but im eternally grateful i did.</h3>
+            <a href="/sports" class="btn btn-primary mt-3">See more</a>
+        </div>
+    </div>
+
+    <!-- Academia -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+            <img class="img-fluid" src="/static/skl.jpeg" alt="Academia">
+        </div>
+        <div class="col-md-6 text-center text-md-start order-md-1">
+            <h1>Academia</h1>
+            <h3>i learnt to apply the disciplien and consistency that i gained for sports, on school. This has led to me achieving goals that younger me didn't know existed. I still have a LONG way to go with university and possibly futher. In all honesty though even if my formal education stops, i dont think ill ever stop being curious and stop seeking information on just everything. I dont really have a photo for me studdying because well no one took one, so enjoy anothing sports photo because the two (sports and academia journey) are interlinked anyway. interlinked.</h3>
+            <a href="/skl" class="btn btn-primary mt-3">See more</a>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="row mb-5 align-items-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <img class="img-fluid" src="/static/image6.jpeg" alt="Project photo">
+        </div>
+        <div class="col-md-6 text-center text-md-start">
+            <h1>Projects</h1>
+            <h3>This is the stuff i do when im not doing sports or school work. Its essentially just me exploring, seeing what i like, what i dont and how an experience can possibly transform me as a person. Its a pretty fun process, though at times scary like when i speak on stage. However, sometimes when things work out and dots conect, it feels amazing.  </h3>
+            <a href="/projects" class="btn btn-primary mt-3">See more</a>
+        </div>
+    </div>
+
+    <!-- Random -->
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+            <img class="img-fluid" src="/static/rand.PNG" alt="Random stuff">
+        </div>
+        <div class="col-md-6 text-center text-md-start order-md-1">
+            <h1>Random</h1>
+            <h3>This page will be on stuff i explore but that arent really a project, they are not too big enough or significant enough to be a project but they still make me. this will be FOOD (i love food) or just random fun facts i come across or even just interactive elemetns i learnt to code in my free time that i felt like implementing. i kinda see this page as my freestyle, no plan just going with it. Btw just look at that steak, i cooked that, yeah me, im chef asad now.</h3>
+            <a href="/rand" class="btn btn-primary mt-3">See more</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

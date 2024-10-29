@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div style="display: flex; flex-direction:column; justify-content:flex-start; align-items: center; text-align: center; padding-top: 15px;">
+    <!--Title-->
+    <div>
+        <h1>Projects</h1>
+    </div>
+
+    <!--Accordian-->
+    <style>
+        .accordion-item {
+            background-color: #343a40; 
+            
+        }
+        .accordion-item .accordion-button {
+            background-color: #343a40;
+            color: white;
+        }
+        .accordion-body {
+            background-color: #343a40; 
+            color: white;
+        }
+        
+    </style>
+
+    <div class="accordion" id="accordionExample" style="width:90%; margin:auto;">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              This website
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is one of my projects as a whole.</strong> I've wanted to do this for a long time, initially in my Y10-11 summer (2022) but didn't end up finishing it. Now im finishing it and hopefully hosting it so that i could showcase what I've done for universities (potentailly jobs in the future) as well as just learning/strengthening my coding skills. This website is also made completely from scratch without any use of any shortcuts to style or code the website as i felt i would learn more not only of the syntax but how to solve problems which i inevitably came across. This required a lot of <a href="/projects/planning">planning</a> which you can see.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Arudino Work
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is probably the one im most excited for.</strong> It's still in the works, and im uploading <a href="/projects/arduino">blogs</a> as im going through it. The end goal is to make a smart home appliance which detects motion and switches on the lights to my room. My mom did ask me however to make one for the kitch above the stove as the lighting falls off a bit there, so im going to do that next.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Tedx
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is one i could never have forseen</strong> Although it wont be posted to their youtube chanell, im still going to be a speaker in a Tedx in September, my topic is going to be about how Technology can be used in optimizing education. I will be specifically looking at artificial intelligence.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                Hosting a race
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>After running a cancer awareness run, I felt a need to do this.</strong> This is still in the planning stage, but if you are in jeddah and would be willing to do a race,<a href="https://www.instagram.com/asw.fitness/" target="_blank"> message me </a> about how long you think the distance should be. If this could come true it would be a dream.
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                Self teaching swift to build an app on Xcode
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div>
+                    <strong>Habits</strong> On a previous page, you may have seen i made a powerpoint for my year group and the at-time seniors on habits, and now i want to attempt to build an app. If you have any experience, feel free to message me any advice. 
+                </div>
+                <!--Add button to page with progress-->
+                <div style="padding:15px;">
+                    <a href="/projects/application" class="btn btn-outline-secondary">See my progress</a>
+
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                Social media
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is more of a hobby</strong> I post anything and absolutely anything. I mostly try posting stuff i think would help people and be entertaining but occasionally ill just post something i think is funny. Feel free to give me any reccomendations you may have.
+              </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+                Student council
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>A lot more fun than i thought</strong> I always thought student council would be boring and just something i would attend as a formality. It was the last possible year for me to join though, so i decided to atleast give it a chance. It was amazing. I got the chances to do a whole lot, there was the basics (helping with events, assembelys) which on its own wouldve made it worth it, but then there was also unexpected opprotunities. For example, I got to be part of the interviewing committee for the new deputy head and help tour CIS (Council of International Schools) around the campus.
+              </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+{% endblock%}
